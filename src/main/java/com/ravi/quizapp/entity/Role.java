@@ -14,14 +14,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Role {
 	
 	@Id
@@ -39,6 +33,58 @@ public class Role {
 	private LocalDate updateDate;
 	
 
-	@OneToMany(mappedBy = "role", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "role", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private Set<UserRole> userRoles;
+
+
+	public Integer getRoleId() {
+		return roleId;
+	}
+
+
+	public void setRoleId(Integer roleId) {
+		this.roleId = roleId;
+	}
+
+
+	public String getRoleType() {
+		return roleType;
+	}
+
+
+	public void setRoleType(String roleType) {
+		this.roleType = roleType;
+	}
+	
+	
+	public LocalDate getCrationDate() {
+		return crationDate;
+	}
+
+
+	public void setCrationDate(LocalDate crationDate) {
+		this.crationDate = crationDate;
+	}
+
+
+	public LocalDate getUpdateDate() {
+		return updateDate;
+	}
+
+
+	public void setUpdateDate(LocalDate updateDate) {
+		this.updateDate = updateDate;
+	}
+
+
+	public Set<UserRole> getUserRoles() {
+		return userRoles;
+	}
+
+
+	public void setUserRoles(Set<UserRole> userRoles) {
+		this.userRoles = userRoles;
+	}
+	
+	
 }

@@ -1,11 +1,13 @@
 package com.ravi.quizapp.service;
 
-import java.util.Set;
-
-import com.ravi.quizapp.entity.User;
-import com.ravi.quizapp.entity.UserRole;
+import com.ravi.quizapp.request.UserRequest;
+import com.ravi.quizapp.response.UserResponse;
 
 public interface IUserService {
 
-	public User saveUser(User user, Set<UserRole> userRoles);
+	public UserResponse createUser(UserRequest request);
+	
+	public UserResponse getUser(String userName);
+	
+	public String deleteUser(String userName);
 }
