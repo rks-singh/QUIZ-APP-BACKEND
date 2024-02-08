@@ -35,8 +35,9 @@ public class UserServiceImpl implements IUserService {
 		UserResponse response = new UserResponse();
 		
 		User user = new User();
-		user.setAcive_SW(false);
+		user.setAcive_SW('N');
 		BeanUtils.copyProperties(request, user);
+		user.setProfile("default.jpg");
 		
 		Role role = new Role();
 		role.setRoleType("NORMAL");

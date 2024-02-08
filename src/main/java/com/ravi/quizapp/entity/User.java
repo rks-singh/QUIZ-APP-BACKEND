@@ -35,7 +35,7 @@ public class User {
 	@Column(insertable = false)
 	private LocalDate updateDate;
 	
-	private Boolean acive_SW;
+	private Character acive_SW;
 	
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private Set<UserRole> userRoles;
@@ -104,12 +104,12 @@ public class User {
 		this.updateDate = updateDate;
 	}
 
-	public Boolean getAcive_SW() {
+	public Character getAcive_SW() {
 		return acive_SW;
 	}
 
-	public void setAcive_SW(Boolean acive_SW) {
-		this.acive_SW = acive_SW;
+	public void setAcive_SW(Character string) {
+		this.acive_SW = string;
 	}
 
 	public Set<UserRole> getUserRoles() {

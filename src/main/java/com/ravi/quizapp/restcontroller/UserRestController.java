@@ -3,6 +3,7 @@ package com.ravi.quizapp.restcontroller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,8 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ravi.quizapp.request.UserRequest;
 import com.ravi.quizapp.response.UserResponse;
-import com.ravi.quizapp.service.IUserService;
+import com.ravi.quizapp.service.IUserService;  
 
+@CrossOrigin
 @RestController
 @RequestMapping("/user")
 public class UserRestController {
