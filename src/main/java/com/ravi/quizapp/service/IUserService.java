@@ -1,13 +1,13 @@
 package com.ravi.quizapp.service;
 
-import com.ravi.quizapp.request.UserRequest;
-import com.ravi.quizapp.response.UserResponse;
+import com.ravi.quizapp.request.RegisterRequest;
+import com.ravi.quizapp.response.RegisterResponse;
 
 public interface IUserService {
 
-	public UserResponse createUser(UserRequest request);
+	public RegisterResponse createUser(RegisterRequest request);
 	
-	public UserResponse getUser(String userName);
+	public RegisterResponse getUser(String userName);
 	
 	public String deleteUser(String userName);
 }

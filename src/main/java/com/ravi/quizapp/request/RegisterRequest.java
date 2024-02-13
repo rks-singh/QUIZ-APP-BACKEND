@@ -1,6 +1,6 @@
 package com.ravi.quizapp.request;
 
-public class UserRequest {
+public class RegisterRequest {
 
 	private String userName;
 	private String userEmail;
@@ -8,7 +8,7 @@ public class UserRequest {
 	private String password;
 	private String profile;
 	
-	public UserRequest() {}
+	public RegisterRequest() {}
 	
 	public String getUserName() {
 		return userName;

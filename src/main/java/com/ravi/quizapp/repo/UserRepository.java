@@ -7,9 +7,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.ravi.quizapp.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
+
+	Optional<User> findByUserEmail(String userEmail);
 	
-	public Optional<User> findByUserEmail(String userEmail);
-	
-	public Optional<User> findByUserName(String userName);
-	
+	Optional<User> findByUserName(String userName);
 }

@@ -17,6 +17,7 @@ import jakarta.persistence.OneToMany;
 
 @Entity
 public class User {
+
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -119,14 +120,12 @@ public class User {
 	public void setUserRoles(Set<UserRole> userRoles) {
 		this.userRoles = userRoles;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "User [userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail + ", userPhone="
 				+ userPhone + ", password=" + password + ", profile=" + profile + ", crationDate=" + crationDate
 				+ ", updateDate=" + updateDate + ", acive_SW=" + acive_SW + ", userRoles=" + userRoles + "]";
 	}
-	
-	
 
 }
