@@ -1,5 +1,11 @@
 
-# <==========  QUIZ-APP  ==========>
+#      QUIZ-APP 
+### ----------------
+
+#TECH STACK USED IN THIS PROJECT.
+### FRONTEND TECHNOLOGY ==> ANGULAR, TYPESCRIPT
+### BACKEND TECHNOLOGY ==> SPRING BOOT, DATA JPA, WEB MVC, SPRING SECURITY(JWT)
+### DATABASE ==> MYSQL
 
 ## QUIZ-APP ANGULAR GITHUB REPO
 <code>https://github.com/rks-singh/QUIZ-APP-FRONTEND.git </code>
