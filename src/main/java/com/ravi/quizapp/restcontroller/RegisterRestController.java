@@ -19,7 +19,7 @@ import com.ravi.quizapp.service.IUserService;
 @CrossOrigin
 @RestController
 @RequestMapping("/user")
-public class UserRestController {
+public class RegisterRestController {
 
 	@Autowired
 	private IUserService userService;
